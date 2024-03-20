@@ -58,7 +58,7 @@ def set_output(name, value):
         
 
 def path_to_object_id(p):
-    s = p.replace("objects/","").replace(".txt","").strip()
+    s = p.replace("objects/","").replace("categories/","").replace(".txt","").strip()
     if s.isnumeric(): return int(s)
     return -9999
 
@@ -74,7 +74,7 @@ def get_object_name_by_id(object_id):
 
 
 
-object_lines, transition_lines, other_lines = [], [], []
+object_lines, transition_lines, category_lines, other_lines = [], [], [], []
 
 for changed_file in changes_all:
     
@@ -93,12 +93,18 @@ for changed_file in changes_all:
     else:
         file_change_hash = sha256(changed_file.encode('utf-8')).hexdigest()
     
-    if 'objects/' in changed_file:
+    change_processed = False
+    
+    if 'objects/' in changed_file or 'categories/' in changed_file:
         
         object_id = path_to_object_id(changed_file)
         if object_id != -9999:
             object_name = get_object_name_by_id(object_id)
-            object_lines.append(f"{sign} [{object_id}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {object_name}")
+            if 'objects/' in changed_file:
+                object_lines.append(f"{sign} [{object_id}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {object_name}")
+            elif 'categories/' in changed_file:
+                category_lines.append(f"{sign} [{object_id}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {object_name}")
+            change_processed = True
             
     elif 'transitions/' in changed_file:
         
@@ -111,13 +117,15 @@ for changed_file in changes_all:
         b = int(filename_parts[1])
         c = int(transition_file_content_parts[0])
         d = int(transition_file_content_parts[1])
+        flag = ""
+        if len(filename_parts) > 2: flag = "_".join(filename_parts[2:])
         
         a_name = get_object_name_by_id(a)
         b_name = get_object_name_by_id(b)
         c_name = get_object_name_by_id(c)
         d_name = get_object_name_by_id(d)
         
-        _fields = [
+        fields = [
                 "a", "b", "c", "d",
                 "flag",
                 "autoDecaySeconds",
@@ -132,33 +140,21 @@ for changed_file in changes_all:
                 ]
         trans_keyValuePairs = []
         
-        trans_keyValuePairs.append( (_fields[0], int(filename_parts[0])) )
-        trans_keyValuePairs.append( (_fields[1], int(filename_parts[1])) )
-        trans_keyValuePairs.append( (_fields[2], int(transition_file_content_parts[0])) )
-        trans_keyValuePairs.append( (_fields[3], int(transition_file_content_parts[1])) )
-        if len(filename_parts) > 2: 
-            trans_keyValuePairs.append( (_fields[4], filename_parts[2]) )
-        else:
-            trans_keyValuePairs.append( (_fields[4], "") )
-        
+        trans_keyValuePairs.append( (fields[0], a) )
+        trans_keyValuePairs.append( (fields[1], b) )
+        trans_keyValuePairs.append( (fields[2], c) )
+        trans_keyValuePairs.append( (fields[3], d) )
+        trans_keyValuePairs.append( (fields[4], flag) )
+            
         for i in range(2, len(transition_file_content_parts)):
-            trans_keyValuePairs.append( (_fields[i+3], transition_file_content_parts[i]) )
-
-#         transition_line = f"""
-# {sign} [link](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) <details><summary>{a_name} + {b_name} = {c_name} + {d_name}</summary>
-# <p>{a} + {b} = {c} + {d}</p>
-# </details> 
-#         """
-
+            trans_keyValuePairs.append( (fields[i+3], transition_file_content_parts[i]) )
+        
         transition_details = "<br/>".join( [ f"{e[0]}: {e[1]}" for e in trans_keyValuePairs] )
-        
-        # transition_line = f"<details><summary>{sign} [{a} + {b} = {c} + {d}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {a_name} + {b_name} = {c_name} + {d_name}</summary>{transition_details}</details>"
-        
         transition_line = f"{sign} [{a} + {b} = {c} + {d}](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash})<p/><details><summary>{a_name} + {b_name} = {c_name} + {d_name}</summary>{transition_details}</details>"
-        
         transition_lines.append(transition_line)
+        change_processed = True
         
-    else:
+    if not change_processed:
         line = f"{sign} [link](https://github.com/{repo}/pull/{pr_number}/files#diff-{file_change_hash}) {changed_file}"
         other_lines.append(line)
         
