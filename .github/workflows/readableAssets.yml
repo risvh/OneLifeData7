@@ -1,7 +1,5 @@
 on: 
-    pull_request:
-        branches:
-            - test1
+    pull_request
 
 jobs:
   onelifedata7_pr_summary:
@@ -30,7 +28,7 @@ jobs:
             output_renamed_files_as_deleted_and_added: true
             include_all_old_new_renamed_files: true
             recover_deleted_files: true
-
+            # recover_deleted_files_to_destination: "deleted_files"
             
       - id: readable_assets
         run: python readableAssets.py
@@ -43,13 +41,10 @@ jobs:
             CHANGES_DELETED: ${{ steps.changed-files.outputs.deleted_files }}
             CHANGES_ADDED: ${{ steps.changed-files.outputs.added_files }}
             CHANGES_RENAME_PAIRS: ${{ steps.changed-files.outputs.all_old_new_renamed_files }}
-            
-            VAR1: ${{ github.head_ref }}
-            VAR2: ${{ github.base_ref }}
 
 
       - id: comment_pr
         uses: thollander/actions-comment-pull-request@v2.5.0
         with:
             message: |
-                ${{ steps.readable_assets.outputs.OUTPUT_CHANGES }}
+                ${{ steps.readable_assets.outputs.OUTPUT_MESSAGE }}
