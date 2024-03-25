@@ -42,8 +42,8 @@ jobs:
               echo "${{ github.ref }}"
               echo $nextID
               echo $maxID
-              echo "::set-output name=nextID::$nextID)"
-              echo "::set-output name=maxID::$maxID)"
+              echo "nextID=$nextID" >> "$GITHUB_OUTPUT"
+              echo "maxID=$maxID" >> "$GITHUB_OUTPUT"
               
       - run: |
               echo "BRUH"
