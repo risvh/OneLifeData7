@@ -13,6 +13,19 @@ jobs:
     if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     steps:
+    
+      - run: |
+              nextID=$( cat objects/nextObjectNumber.txt )
+              maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
+              echo "${{ github.head_ref }}"
+              echo "${{ github.base_ref }}"
+              echo "${{ github.ref }}"
+              echo $nextID
+              echo $maxID
+              echo "${{ github.event.number }}"
+              echo "..."
+              echo "${{ toJson(github) }}"
+    
       - uses: actions/checkout@v4
         with:
           ref: pull/${{ github.event.number }}/head
