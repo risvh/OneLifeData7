@@ -44,6 +44,13 @@ jobs:
               echo $maxID
               echo "::set-output name=nextID::$nextID)"
               echo "::set-output name=maxID::$maxID)"
+              
+      - run: |
+              echo "BRUH"
+              echo "${{ steps.object_id_calculation.output.maxID }}"
+              echo "${{ steps.object_id_calculation.output.nextID }}"
+              echo "${{ github.head_ref }}"
+              echo "${{ github.base_ref }}"
 
       - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
         name: Renumbering objects
