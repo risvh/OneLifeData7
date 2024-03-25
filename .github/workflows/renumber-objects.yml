@@ -21,14 +21,21 @@ jobs:
         with:
           node-version: 18
 
-      - id: object_id_calculation
+      - name: Object IDs calculation
+        id: object_id_calculation
         run: |
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
+              echo ${{ ${{ github.head_ref }} }}
+              echo ${{ ${{ github.base_ref }} }}
+              echo ${{ ${{ github.ref }} }}
+              echo $nextID
+              echo $maxID
               echo "::set-output name=nextID::$nextID)"
               echo "::set-output name=maxID::$maxID)"
 
       - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
+        name: Renumbering objects
         run: |
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
