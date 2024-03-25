@@ -26,9 +26,9 @@ jobs:
         run: |
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
-              echo ${{ ${{ github.head_ref }} }}
-              echo ${{ ${{ github.base_ref }} }}
-              echo ${{ ${{ github.ref }} }}
+              echo "${{ github.head_ref }}"
+              echo "${{ github.base_ref }}"
+              echo "${{ github.ref }}"
               echo $nextID
               echo $maxID
               echo "::set-output name=nextID::$nextID)"
