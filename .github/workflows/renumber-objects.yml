@@ -47,12 +47,12 @@ jobs:
               
       - run: |
               echo "BRUH"
-              echo "${{ steps.object_id_calculation.output.maxID }}"
-              echo "${{ steps.object_id_calculation.output.nextID }}"
+              echo "${{ steps.object_id_calculation.outputs.maxID }}"
+              echo "${{ steps.object_id_calculation.outputs.nextID }}"
               echo "${{ github.head_ref }}"
               echo "${{ github.base_ref }}"
 
-      - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
+      - if: steps.object_id_calculation.outputs.maxID > steps.object_id_calculation.outputs.nextID
         name: Renumbering objects
         run: |
               echo "HERE"
@@ -67,7 +67,7 @@ jobs:
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               echo -n $((maxID + 1)) > objects/nextObjectNumber.txt
 
-      - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
+      - if: steps.object_id_calculation.outputs.maxID > steps.object_id_calculation.outputs.nextID
         uses: EndBug/add-and-commit@v9
         with:
           message: "Renumber objects"
