@@ -1,14 +1,16 @@
-name: Renumber objects
+name: Renumber objects and sprites
 
-on:
-  workflow_dispatch:
+on: 
+  push:
+    branches:
+      - scripts_test
+    
 
 jobs:
   renumber:
     runs-on: ubuntu-latest
     steps: 
-      - name: Checkout merged PR
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
 
@@ -16,7 +18,15 @@ jobs:
         with:
           node-version: 18
 
-      - run: |
+      - id: object_id_calculation
+        run: |
+              nextID=$( cat objects/nextObjectNumber.txt )
+              maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
+              echo "::set-output name=nextID::$nextID)"
+              echo "::set-output name=maxID::$maxID)"
+
+      - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
+        run: |
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               start_number=$maxID
@@ -27,9 +37,10 @@ jobs:
               node RenumberObjects.js $start_number
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               echo -n $((maxID + 1)) > objects/nextObjectNumber.txt
-      
-      - uses: EndBug/add-and-commit@v9
+
+      - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
+        uses: EndBug/add-and-commit@v9
         with:
           message: "Renumber objects"
           default_author: github_actions
-      
+        
