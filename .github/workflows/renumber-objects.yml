@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: pull/${{ github.event.number }}/head
 
       - uses: actions/setup-node@v4
         with:
@@ -37,6 +37,7 @@ jobs:
       - if: steps.object_id_calculation.output.maxID > steps.object_id_calculation.output.nextID
         name: Renumbering objects
         run: |
+              echo "HERE"
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               start_number=$maxID
