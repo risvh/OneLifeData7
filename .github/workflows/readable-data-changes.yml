@@ -7,6 +7,10 @@ jobs:
   readable-data-changes:
     runs-on: ubuntu-latest
     steps:
+    
+      - run: |
+              echo "${{ toJson(github) }}"
+    
       - uses: actions/checkout@v4
         with:
           fetch-depth: '0'
