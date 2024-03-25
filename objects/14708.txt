@@ -1,4 +1,4 @@
-id=24707
+id=14708
 Two Cast Iron Ornate Panels with Spring
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
