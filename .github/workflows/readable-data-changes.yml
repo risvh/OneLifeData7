@@ -6,10 +6,9 @@ on:
 jobs:
   readable-data-changes:
     runs-on: ubuntu-latest
+    permissions: 
+      pull-requests: write
     steps:
-    
-      - run: |
-              echo "${{ toJson(github) }}"
     
       - uses: actions/checkout@v4
         with:
