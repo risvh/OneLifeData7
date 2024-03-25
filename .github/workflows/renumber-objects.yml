@@ -19,12 +19,13 @@ jobs:
               echo "${{ github.base_ref }}"
               echo "${{ github.ref }}"
               echo "${{ github.event.pull_request.number }}"
+              echo "${{ github.event.pull_request.head.ref }}"
               echo "..."
               echo "${{ toJson(github) }}"
     
       - uses: actions/checkout@v4
         with:
-          ref: pull/${{ github.event.pull_request.number }}/head
+          ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: '0'
 
       - uses: actions/setup-node@v4
