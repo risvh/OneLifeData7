@@ -1,12 +1,16 @@
 name: Renumber objects
 
-on:
-  workflow_dispatch:
+on: 
+  pull_request:
     branches:
-      script_test
+      - scripts_test
+    types:
+      - closed
+    
 
 jobs:
   renumber:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout merged PR
@@ -18,7 +22,15 @@ jobs:
         with:
           node-version: 18
 
-      - run: |
+      - id: id_calculation
+        run: |
+              nextID=$( cat objects/nextObjectNumber.txt )
+              maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
+              echo "::set-output name=nextID::$nextID)"
+              echo "::set-output name=maxID::$maxID)"
+
+      - if: steps.id_calculation.output.maxID > steps.id_calculation.output.nextID
+        run: |
               nextID=$( cat objects/nextObjectNumber.txt )
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               start_number=$maxID
@@ -29,7 +41,7 @@ jobs:
               node RenumberObjects.js $start_number
               maxID=$(ls -v objects/[0-9]* | tail -1 | sed 's/objects\///' | sed 's/.txt//')
               echo -n $((maxID + 1)) > objects/nextObjectNumber.txt
-      
+
       - uses: EndBug/add-and-commit@v9
         with:
           message: "Renumber objects"
