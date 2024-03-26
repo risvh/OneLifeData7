@@ -66,8 +66,10 @@ def run_command(command):
     f = os.popen(command)
     output = f.read()
     status = f.close()
-    if status:
+    if status is not None:
+        print("ERROR")
         sys.exit(1)
+    print("OK")
     return output
 
 def set_multiline_output(name, value):
