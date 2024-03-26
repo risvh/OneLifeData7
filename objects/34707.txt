@@ -1,4 +1,4 @@
-id=10000
+id=34707
 Dry Fertile Coconut Tree
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
