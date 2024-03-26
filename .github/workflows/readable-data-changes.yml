@@ -10,12 +10,6 @@ jobs:
     
       - run: |
               echo "${{ toJson(github) }}"
-
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.base.ref }}
-          repository: ${{ github.event.pull_request.base.repo.full_name || github.repository }}
-          fetch-depth: '0'
     
       - uses: actions/checkout@v4
         with:
@@ -34,8 +28,8 @@ jobs:
           REPO: ${{ github.repository }}
           REPO_PATH: ${{ github.workspace }}
           PRNUM: ${{ github.event.number }}
-          COMMIT_A: ${{ github.event.pull_request.base.sha }}
-          COMMIT_B: ${{ github.event.pull_request.head.sha }}
+          COMMIT_A: ${{ github.repository }} #${{ github.event.pull_request.base.sha }}
+          COMMIT_B: HEAD #${{ github.event.pull_request.head.sha }}
 
       - name: Comment on PR
         uses: thollander/actions-comment-pull-request@v2
