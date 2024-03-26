@@ -1,16 +1,17 @@
 name: Renumber objects and sprites
 
 on: 
-  pull_request_review:
+  # pull_request_review:
+  pull_request:
     branches:
       - scripts_test
-    types: 
-      - submitted
+    # types: 
+      # - submitted
     
 
 jobs:
   renumber:
-    if: github.event.review.state == 'approved'
+    # if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     permissions:
         contents: write
@@ -18,9 +19,9 @@ jobs:
     
       - uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
-          ref: ${{ github.event.pull_request.head.ref }}
-          # ref: ${{ github.head_ref }}
+          # repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          # ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.head_ref }}
           fetch-depth: '0'
           
       - run: |
