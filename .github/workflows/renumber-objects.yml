@@ -12,13 +12,15 @@ jobs:
   renumber:
     if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
     steps:
     
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
-          # ref: ${{ github.event.pull_request.head.ref }}
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          # ref: ${{ github.head_ref }}
           fetch-depth: '0'
           
       - run: |
