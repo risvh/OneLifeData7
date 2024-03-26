@@ -10,8 +10,8 @@ jobs:
     
       - uses: actions/checkout@v4
         with:
-          # ref: ${{ github.event.pull_request.head.ref }}
-          # repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
           fetch-depth: '0'
 
       - uses: actions/setup-python@v5
@@ -26,7 +26,7 @@ jobs:
           REPO_PATH: ${{ github.workspace }}
           PRNUM: ${{ github.event.number }}
           COMMIT_A: origin/${{ github.base_ref }}
-          COMMIT_B: HEAD
+          COMMIT_B: 1
 
       - name: Comment on PR
         uses: thollander/actions-comment-pull-request@v2
