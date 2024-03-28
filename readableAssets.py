@@ -135,6 +135,8 @@ object_lines, transition_lines, category_lines, other_lines = [], [], [], []
 
 for changed_file in changes_all:
     
+    print(" ==================== HERE ")
+    
     # whether the change is an added file, or a deleted one, or a modified one
     # note that renamed files are configured to show as deleted of old and added of new
     sign = "."
