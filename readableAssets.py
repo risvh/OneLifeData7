@@ -173,9 +173,11 @@ for changed_file in changes_all:
                     category_before, category_after = [], []
                     
                     if changed_file not in changes_added:
+                        print(" ==================== NOT ADDED ")
                         category_before_output = run_command(f"git show {COMMIT_A}:{changed_file}")
                         category_before = read_category_as_object_list(category_before_output)
                     if changed_file not in changes_deleted:
+                        print(" ==================== NOT DELETED ")
                         category_after_output = run_command(f"git show {COMMIT_B}:{changed_file}")
                         category_after = read_category_as_object_list(category_after_output)
                         
