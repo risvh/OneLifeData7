@@ -1,1 +1,1 @@
-oven 0 -2 3
+ornamentWhite 0 -2 3
