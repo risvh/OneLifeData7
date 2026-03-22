@@ -1,5 +1,5 @@
-id=13675
-Mold with Pig Iron Ingot
+id=28020
+Mold with Cast Iron Block
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -48,8 +48,8 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111708
-pos=0.000000,-4.000000
+spriteID=122902
+pos=0.000000,-20.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
@@ -57,11 +57,11 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=555
-pos=0.000000,-4.000000
+spriteID=122893
+pos=0.000000,-20.000000
 rot=0.000000
 hFlip=0
-color=0.338028,0.061892,0.061892
+color=1.000000,1.000000,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
