@@ -1,5 +1,5 @@
 id=28017
-Continuous Casting Machine
+Running Continuous Casting Machine#slabs
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3
@@ -29,7 +29,7 @@ creationSoundForce=0
 numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
-numSprites=10
+numSprites=12
 spriteID=122875
 pos=64.000000,52.000000
 rot=0.000000
@@ -120,6 +120,25 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
+spriteID=122906
+pos=125.000000,176.000000
+rot=0.000000
+hFlip=0
+color=1.000000,1.000000,1.000000
+ageRange=-1.000000,-1.000000
+parent=-1
+invisHolding=0,invisWorn=0,behindSlots=0
+invisCont=0
+spriteID=122906
+pos=125.000000,176.000000
+rot=0.000000
+hFlip=0
+color=1.000000,1.000000,1.000000
+ageRange=-1.000000,-1.000000
+parent=-1
+invisHolding=0,invisWorn=0,behindSlots=0
+invisCont=0
+spritesAdditiveBlend=11
 headIndex=-1
 bodyIndex=-1
 backFootIndex=-1
