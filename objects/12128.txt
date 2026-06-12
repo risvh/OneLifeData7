@@ -1,5 +1,5 @@
 id=12128
-Loom with Cotton Blend Cloth
+(outdated) Loom with Cotton Blend Cloth
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -29,7 +29,6 @@ creationSoundForce=0
 numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
-slotsNoSwap=0
 numSprites=1
 spriteID=111033
 pos=2.000000,47.000000

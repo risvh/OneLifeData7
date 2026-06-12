@@ -1,5 +1,5 @@
 id=6712
-Sewing Machine#llama thread
+(outdated) Sewing Machine#llama thread
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -91,4 +91,4 @@ frontFootIndex=-1
 numUses=6,1.000000
 useVanishIndex=-1
 useAppearIndex=-1
-pixHeight=85
+pixHeight=95

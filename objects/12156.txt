@@ -1,5 +1,5 @@
 id=12156
-Pink Cotton Long Dress
+Pink Long Empire Waist Dress
 containable=1
 containSize=2.000000,vertSlotRot=-0.250000
 permanent=0,minPickupAge=14
