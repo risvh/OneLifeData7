@@ -1,5 +1,5 @@
 id=20568
-Long Empire Waist Dress
+Undyed Long Empire Waist Dress
 containable=1
 containSize=2.000000,vertSlotRot=-0.250000
 permanent=0,minPickupAge=14
@@ -34,7 +34,7 @@ spriteID=2704
 pos=17.000000,-44.000000
 rot=0.000000
 hFlip=0
-color=0.620000,0.719200,0.775000
+color=0.661972,0.757191,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=2,behindSlots=0
@@ -43,7 +43,7 @@ spriteID=2702
 pos=-20.000000,-40.000000
 rot=0.000000
 hFlip=0
-color=0.620000,0.719200,0.775000
+color=0.661972,0.757191,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=2,behindSlots=0

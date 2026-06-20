@@ -1,5 +1,5 @@
 id=20566
-Long Empire Waist Dress on Hanger
+Undyed Long Empire Waist Dress on Hanger
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -30,30 +30,12 @@ creationSoundForce=0
 numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
-numSprites=9
+numSprites=7
 spriteID=111083
 pos=1.000001,33.999999
 rot=1.000000
 hFlip=1
 color=1.000000,1.000000,1.000000
-ageRange=-1.000000,-1.000000
-parent=-1
-invisHolding=0,invisWorn=2,behindSlots=0
-invisCont=0
-spriteID=2704
-pos=17.000000,-44.000000
-rot=0.000000
-hFlip=0
-color=0.954930,0.774648,1.000000
-ageRange=-1.000000,-1.000000
-parent=-1
-invisHolding=0,invisWorn=2,behindSlots=0
-invisCont=0
-spriteID=2702
-pos=-20.000000,-40.000000
-rot=0.000000
-hFlip=0
-color=0.954930,0.774648,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=2,behindSlots=0
