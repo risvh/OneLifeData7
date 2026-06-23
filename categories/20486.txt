@@ -1,4 +1,5 @@
 parentID=20486
 pattern
-numObjects=1
+numObjects=2
 20534
+20905
