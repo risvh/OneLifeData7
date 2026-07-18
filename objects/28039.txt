@@ -1,5 +1,5 @@
-id=28017
-Running Continuous Casting Machine#slab
+id=28039
+Running Continuous Casting Machine#bloom
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -84,7 +84,7 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=122870
+spriteID=122871
 pos=68.000000,89.000000
 rot=0.000000
 hFlip=0

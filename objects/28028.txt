@@ -1,5 +1,5 @@
 id=28028
-Stack of Hot Steel Bloom
+Stack of Hot Steel Blooms
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -54,7 +54,7 @@ rot=0.000000
 hFlip=0
 color=1.000000,0.398592,0.140845
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=17
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=122864
@@ -81,7 +81,7 @@ rot=0.000000
 hFlip=0
 color=1.000000,0.398592,0.140845
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=17
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=122864
@@ -108,7 +108,7 @@ rot=0.000000
 hFlip=0
 color=1.000000,0.398592,0.140845
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=17
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=122864
@@ -135,7 +135,7 @@ rot=0.000000
 hFlip=0
 color=1.000000,0.398592,0.140845
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=17
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=122864
@@ -162,7 +162,7 @@ rot=0.000000
 hFlip=0
 color=1.000000,0.398592,0.140845
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=17
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=122864
