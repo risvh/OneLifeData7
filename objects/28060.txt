@@ -1,5 +1,5 @@
-id=18311
-@ Baskets of flowers
+id=28060
+Cool Steel Axe Head in Metal Tongs
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3
@@ -18,9 +18,9 @@ floor=0
 floorHugging=0
 foodValue=0
 speedMult=1.000000
-heldOffset=0.000000,0.000000
+heldOffset=15.000000,17.000000
 clothing=n
-clothingOffset=0.000000,0.000000
+clothingOffset=-27.000000,72.000000
 deadlyDistance=0
 useDistance=1
 sounds=-1:0.0,-1:0.0,-1:0.0,-1:0.0
@@ -30,8 +30,8 @@ numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
 numSprites=3
-spriteID=711
-pos=0.000000,0.000000
+spriteID=122911
+pos=-6.000000,-30.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
@@ -39,20 +39,20 @@ ageRange=-1.000000,-1.000000
 parent=2
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=549
-pos=0.000000,-47.000000
+spriteID=557
+pos=22.000000,-34.000004
 rot=0.000000
 hFlip=0
-color=0.000000,0.000000,0.000000
+color=1.000000,1.000000,1.000000
 ageRange=-1.000000,-1.000000
-parent=2
+parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=101856
-pos=0.000000,-32.000000
+spriteID=122913
+pos=-6.000000,-35.000000
 rot=0.000000
 hFlip=0
-color=0.000000,0.000000,0.000000
+color=1.000000,1.000000,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
@@ -64,4 +64,4 @@ frontFootIndex=-1
 numUses=1,1.000000
 useVanishIndex=-1
 useAppearIndex=-1
-pixHeight=25
+pixHeight=0
