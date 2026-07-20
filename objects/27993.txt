@@ -1,5 +1,5 @@
 id=27993
-Stamping Press#chisel standby
+Forging Press#chisel standby
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
