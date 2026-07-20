@@ -1,5 +1,5 @@
 id=27986
-Stamping Die for Froe Blade
+Forging Die for Froe Blade
 containable=1
 containSize=3.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3

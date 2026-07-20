@@ -1,5 +1,5 @@
 id=27982
-Stamping Die for Axe Head
+Forging Die for Axe Head
 containable=1
 containSize=3.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3
