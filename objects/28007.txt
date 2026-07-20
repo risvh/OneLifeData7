@@ -1,5 +1,5 @@
 id=28007
-Running Stamping Press#shovel
+Running Forging Press#shovel
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3

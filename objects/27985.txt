@@ -1,5 +1,5 @@
 id=27985
-Stamping Die for Adze Head
+Forging Die for Adze Head
 containable=1
 containSize=3.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3

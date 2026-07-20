@@ -1,5 +1,5 @@
 id=27988
-Stamping Die for Blade Blank
+Forging Die for Blade Blank
 containable=1
 containSize=3.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3
