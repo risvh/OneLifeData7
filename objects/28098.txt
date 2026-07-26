@@ -1,7 +1,7 @@
-id=28091
-Cool Steel Mining Pick Head in Metal Tongs
-containable=0
-containSize=1.000000,vertSlotRot=0.000000
+id=28098
+Steel Rebars
+containable=1
+containSize=2.000000,vertSlotRot=-0.250000
 permanent=0,minPickupAge=3
 noFlip=0
 sideAccess=0
@@ -18,7 +18,7 @@ floor=0
 floorHugging=0
 foodValue=0
 speedMult=1.000000
-heldOffset=50.000000,26.000000
+heldOffset=17.000000,17.000000
 clothing=n
 clothingOffset=-27.000000,72.000000
 deadlyDistance=0
@@ -30,8 +30,8 @@ numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
 numSprites=3
-spriteID=122911
-pos=-6.000000,-30.000000
+spriteID=122925
+pos=-5.000000,-31.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
@@ -39,17 +39,17 @@ ageRange=-1.000000,-1.000000
 parent=2
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=1032
-pos=28.000000,-26.000000
+spriteID=122925
+pos=1.000000,-31.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
 ageRange=-1.000000,-1.000000
-parent=-1
+parent=2
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=122913
-pos=-6.000000,-35.000000
+spriteID=122925
+pos=-2.000000,-26.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
