@@ -1,5 +1,5 @@
-id=28132
-Unbaked Electrode Section
+id=28141
+Graphite Electrode Section with Nipple
 containable=1
 containSize=2.000000,vertSlotRot=0.000000
 permanent=0,minPickupAge=3
@@ -23,18 +23,27 @@ clothing=n
 clothingOffset=-27.000000,72.000000
 deadlyDistance=0
 useDistance=1
-sounds=149:0.250000,-1:0.0,-1:0.0,-1:0.0
-creationSoundInitialOnly=1
+sounds=45:0.250000,-1:0.0,-1:0.0,-1:0.0
+creationSoundInitialOnly=0
 creationSoundForce=0
 numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
-numSprites=1
+numSprites=2
+spriteID=122957
+pos=20.000000,-19.000000
+rot=0.000000
+hFlip=0
+color=1.000000,1.000000,1.000000
+ageRange=-1.000000,-1.000000
+parent=1
+invisHolding=0,invisWorn=0,behindSlots=0
+invisCont=0
 spriteID=122952
 pos=0.000000,-21.000000
 rot=0.000000
 hFlip=0
-color=0.619718,0.619718,0.619718
+color=1.000000,1.000000,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
