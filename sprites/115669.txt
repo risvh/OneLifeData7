@@ -1,1 +1,1 @@
-slabMold 0 0 0
+steelSlabMold 0 0 0
