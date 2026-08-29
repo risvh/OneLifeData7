@@ -1,6 +1,6 @@
 id=20417
 type=0,randStartPhase=0
-forceZeroStart=0
+forceZeroStart=1
 numSounds=0
 numSprites=20
 numSlots=0
