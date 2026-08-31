@@ -1,5 +1,5 @@
 id=20486
-@ Back Sketch Patterns on Treadle Machine
+@ Back Sketch and Pattern on Treadle Machine
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3

@@ -1,5 +1,5 @@
 id=20487
-@ Headgear Sketch Patterns on Threaded Treadle Machine
+@ Headgear Sketch and Pattern on Threaded Treadle Machine
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3

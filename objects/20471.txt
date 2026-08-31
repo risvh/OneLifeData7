@@ -1,5 +1,5 @@
 id=20471
-@ Back Sketch Patterns
+@ Sewing Patterns used with Back Sketch
 containable=1
 containSize=2.000000,vertSlotRot=-0.500000
 permanent=0,minPickupAge=3
