@@ -1,5 +1,5 @@
 id=20595
-Treadle Sewing Machine with Two Ballerinas without Bows
+Treadle Sewing Machine with Two Ballet Shoes without Bows
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
