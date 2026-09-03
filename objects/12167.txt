@@ -1,5 +1,5 @@
 id=12167
-Pink Cotton Long Dress on Hanger
+Pink Long Empire Waist Dress on Hanger
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
