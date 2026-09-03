@@ -301,7 +301,7 @@ parent=28
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
 spriteID=116600
-pos=-32.000000,49.000000
+pos=-38.000000,46.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
