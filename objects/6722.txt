@@ -42,7 +42,7 @@ ageRange=-1.000000,-1.000000
 parent=2
 invisHolding=0,invisWorn=0,behindSlots=1
 invisCont=0
-spriteID=119065
+spriteID=116625
 pos=6.000000,-27.000000
 rot=0.000000
 hFlip=0
@@ -60,7 +60,7 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=119064
+spriteID=116624
 pos=9.000000,-32.999996
 rot=0.000000
 hFlip=0
