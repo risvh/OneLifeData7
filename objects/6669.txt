@@ -1,7 +1,7 @@
 id=6669
 Horse Town Bottom
 containable=1
-containSize=1.000000,vertSlotRot=0.000000
+containSize=1.000000,vertSlotRot=-0.250000
 permanent=0,minPickupAge=3
 noFlip=0
 sideAccess=0
@@ -23,7 +23,7 @@ clothing=b
 clothingOffset=-1.000000,4.000000
 deadlyDistance=0
 useDistance=1
-sounds=153:0.250000,286:0.101010,-1:0.0,-1:0.0
+sounds=-1:0.0,286:0.101010,-1:0.0,-1:0.0
 creationSoundInitialOnly=0
 creationSoundForce=0
 numSlots=0#timeStretch=1.000000
@@ -66,6 +66,7 @@ ageRange=-1.000000,-1.000000
 parent=2
 invisHolding=0,invisWorn=1,behindSlots=0
 invisCont=0
+ignoredCont=1
 spriteID=116626
 pos=-6.000000,-32.000000
 rot=0.125000
@@ -75,6 +76,7 @@ ageRange=-1.000000,-1.000000
 parent=2
 invisHolding=0,invisWorn=1,behindSlots=0
 invisCont=0
+ignoredCont=1
 headIndex=-1
 bodyIndex=-1
 backFootIndex=-1
