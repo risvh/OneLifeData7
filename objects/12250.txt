@@ -1,5 +1,5 @@
 id=12250
-Pair of Blue Ballet Shoes
+Pair of Blue Ballet Flats
 containable=1
 containSize=1.000000,vertSlotRot=-0.250000
 permanent=0,minPickupAge=3
@@ -30,20 +30,20 @@ numSlots=0#timeStretch=1.000000
 slotSize=1.000000
 slotsLocked=0
 numSprites=2
-spriteID=111130
-pos=1.000000,-32.000000
+spriteID=152989
+pos=2.000000,-32.000000
 rot=0.000000
 hFlip=0
-color=1.000000,1.000000,1.000000
+color=0.394366,0.769688,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111130
-pos=6.000000,-35.000000
+spriteID=152989
+pos=7.000000,-35.000000
 rot=0.000000
 hFlip=0
-color=1.000000,1.000000,1.000000
+color=0.394366,0.769688,1.000000
 ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0

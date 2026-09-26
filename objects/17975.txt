@@ -1,5 +1,5 @@
 id=17975
-Treadle Sewing Machine with Two Ballet Shoes without Bows
+Treadle Sewing Machine with Two Ballet Flats without Bows
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -138,8 +138,8 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111157
-pos=-9.000000,58.000000
+spriteID=152988
+pos=-9.000000,54.000000
 rot=0.000000
 hFlip=1
 color=1.000000,1.000000,1.000000
@@ -147,8 +147,8 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111157
-pos=-23.000000,52.000000
+spriteID=152988
+pos=-23.000000,48.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000

@@ -1,5 +1,5 @@
 id=18066
-Treadle Sewing Machine with Ballet Shoes
+Treadle Sewing Machine with Ballet Flats
 containable=0
 containSize=1.000000,vertSlotRot=0.000000
 permanent=1,minPickupAge=3
@@ -138,8 +138,8 @@ ageRange=-1.000000,-1.000000
 parent=-1
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111126
-pos=-25.000000,51.000000
+spriteID=152989
+pos=-23.000000,49.000000
 rot=0.000000
 hFlip=0
 color=1.000000,1.000000,1.000000
@@ -291,8 +291,8 @@ ageRange=-1.000000,-1.000000
 parent=27
 invisHolding=0,invisWorn=0,behindSlots=0
 invisCont=0
-spriteID=111126
-pos=-7.000000,57.000000
+spriteID=152989
+pos=-9.000000,55.000000
 rot=0.000000
 hFlip=1
 color=1.000000,1.000000,1.000000
